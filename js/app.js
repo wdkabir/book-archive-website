@@ -44,7 +44,7 @@ const loadBook = () => {
 const displayBook = (data , books) => {
     const count = books.length;
     const AllBookCount = data.numFound;
-    countData.innerHTML = `<span class="fw-bold text-info fs-5">Showing : ${AllBookCount} OF ${count} Found Result</span>`;
+    countData.innerHTML = `<span class="fw-bold text-success fs-5">Showing : ${AllBookCount} OF ${count} Found Result</span>`;
     // error handaling
     if(books.length === 0){
         errorMessage.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
